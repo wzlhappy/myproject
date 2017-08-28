@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>聚合数据</title>
+  <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css">
+  <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+  <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css">
+  <script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.js"></script>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<!-- 页面上部 -->
+  <div class="cover">
+  <!-- 导航栏 页面头部 -->
+    <div class="top">
+    <!-- 登陆 注册 -->
+      <div class="top-top">
+        <ul>
+          <li><a href="">联系我们</a></li>
+          <li><a href="">常见问题</a></li>
+          <li><a href="">关注聚合</a></li>
+          <li>|</li>
+          <li class="posi">
+            <a style="color:#F8D08B;font-size:14px" href="">免费注册</a>
+            <img src="./img/4.png" alt="">
+          </li>
+          <li><a style="color:#00AEFF;font-size:14px" href="">亲，请登录</a></li>
+        </ul>
+      </div>
+      <!-- 导航条 -->
+      <div class="top-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <img class="icon" src="./img/3.png" alt="">
+            </div>
+            <div class="col-md-8">
+              <nav class="navbar navbar-default">
+              <div class="container">
+                <div  id="navigation" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <form class="navbar-form navbar-right">
+                        <div class="form-group form-group-sm">
+                            <div class="input-group">
+                              <input type="text" class="form-control" placeholder="汽车维修保养记录查询">
+                              <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+                            </div>
+                        </div>
+                    </form>
+                  <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                      <a href="#">首页<div id="lind"></div></a>
+                    </li>
+                    <li>
+                      <a href="#">API<div id="line"></div></a>
+                    </li>
+                    <li>
+                      <a href="#">聚合充值<div id="line"></div></a>
+                    </li>
+                    <li id="dropdown">
+                      <a href="#">聚合会员<div id="line"></div></a>
+                      <div id="dropdown-menu">
+                        <a href="#" style="color:#666">会员等级</a>
+                        <a href="#" style="color:#00BDFF">会员积分</a>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">新闻动态<div id="line"></div></a>                    
+                    </li>
+                  </ul> 
+                </div>
+              </div>
+            </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 第一大模块，有关二级菜单 -->
+    <div class="list">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3" style="border:1px solid #ECECEC;background-color: #FCFCFC;">
+            <div id="firstmenu">
+              <ul>
+                <li id="alldata"><span style="display:inline-block;width: 14px;height:12px;background: url(./img/2.png) -266px -304px no-repeat;margin-right:5px;"></span>全部数据分类>>
+                </li>
+                <li>
+                  <div class="menu">
+                    <i id="circle"></i>
+                    <h4>生活/天气/健康</h4>
+                    <p>常用快递 天气预报 手机号码归属地</p>
+                  </div>
+                  <!-- 隐藏的二级菜单 -->
+                  <div class="hiddenmenu">
+                    <dl>
+                      <dt>
+                        <a id="hiddenmu">生活常用</a>
+                      </dt>
+                      <dd>
+                        <a href="#">条码查询</a>
+                        <a href="#">万能小哥</a>
+                        <a href="#">全国违章直线查询</a>
+                        <a href="#">HS在线影票</a>
+                        <a href="#">常用快递</a>
+                        <a href="#">快递在线下单</a>
+                        <a href="#">名片识别</a>
+                        <a href="#">身份证查询</a>
+                        <a href="#">IP地址</a>
+                        <a href="#">新闻头条</a>
+                        <a href="#">手机号码归属地</a>
+                        <a href="#">菜谱大全</a>
+                        <a href="#">餐饮美食</a>
+                        <a href="#">万年历</a>
+                        <a href="#">笑话大全</a>
+                        <a href="#">微信精选</a>
+                        <a href="#">ISBN数据查询</a>
+                        <a href="#">邮编查询</a>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt>
+                        <a href="">天气预报</a>
+                      </dt>
+                      <dd>
+                        <a href="">历史天气</a>
+                        <a href="">7*24小时城市天气空气质量预报</a>
+                        <a href="">全国天气预报</a>
+                        <a href="">空气质量</a>
+                        <a href="">水质量</a>
+                        <a href="">灾害预警</a>
+                        <a href="">城市污染查询</a>
+                     </dd>
+                    </dl>
+                    <dl>
+                      <dt>
+                        <a href="">医药健康</a>
+                      </dt>
+                    </dl>
+                  </div>
+                </li>
+                <li>
+                  <div class="menu">
+                    <i id="circle"></i>
+                    <h4>车辆/出行</h4>
+                    <p>全国车辆违章 维修保养记录 驾驶证</p>
+                  </div>
+                  <div class="hiddenmenu">
+                    <dl>
+                      <dt><a href="" class="hiddenmu">车辆服务</a></dt>
+                      <dd>
+                        <a href="">VIN车架号查询详细版</a>
+                        <a href="">汽车维修保养记录</a>
+                        <a href="">驾驶证核查</a>
+                        <a href="">违章代缴</a>
+                        <a href="">驾驶员累计积分查询</a>
+                        <a href="">大型车违章查询</a>
+                        <a href="">出险理赔查询</a>
+                        <a href="">VIN号查询</a>
+                        <a href="">车辆信息校验</a>
+                        <a href="">出险次数</a>
+                        <a href="">全国车辆违章</a>
+                        <a href="">全国加油站</a>
+                        <a href="">全国省市今日油价</a>
+                        <a href="">违章高发地</a>
+                        <a href="">尾号限行</a>
+                        <a href="">VIN车架号车辆识别码查询</a>
+                        <a href="">二手车价值评估</a>
+                        <a href="">免费出行保险</a>
+                        <a href="">车辆故障码DTC查询</a>
+                        <a href="">驾照题库</a>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt><a href="" class="hiddenmu">旅游出行</a></dt>
+                      <dd>
+                        <a href="">城际出行直达规则</a>
+                        <a href="">泰国落地签申请表生产</a>
+                        <a href="">城际出行换乘规则</a>
+                        <a href="">火车票抢票</a>
+                        <a href="">火车票查询</a>
+                        <a href="">火车票订票</a>
+                        <a href="">航班实时起降时间</a>
+                        <a href="">航班时刻票价查询</a>
+                        <a href="">旅游景点介绍</a>
+                        <a href="">全国公交及路径规划查询</a>
+                      </dd>
+                    </dl>
+                  </div>
+                </li>
+                <li>
+                  <div class="menu">
+                    <i id="circle"></i> 
+                    <h4>验证服务</h4>
+                    <p>股票数据 汇率 手机实名认证</p>
+                  </div>
+                  <div class="hiddenmenu">
+                    <dl>
+                      <dt><a href="" class="hiddenmu">验证服务</a></dt>
+                      <dd>
+                        <a href="">手机元素校验</a>
+                        <a href="">手机在网状态</a>
+                        <a href="">手机在网时长</a>
+                        <a href="">身份证实名认证</a>
+                        <a href="">验证码识别</a>
+                        <a href="">三网手机实名制认证</a>
+                        <a href="">银行卡二元素检测</a>
+                        <a href="">银行卡三元素检测</a>
+                        <a href="">银行卡四元素检测</a>
+                        <a href="">判断银行卡类型及真伪</a>
+                        <a href="">银行卡类别查询</a>
+                        <a href="">企业工商数据</a>
+                        <a href="">中国股权投资行业数据库</a>
+                        <a href="">股票数据</a>
+                        <a href="">汇率</a>
+                        <a href="">货币汇率</a>
+                        <a href="">股票查询</a>
+                        <a href="">新三板实时股票信息</a>
+                        <a href="">黄金数据</a>
+                        <a href="">净值数据</a>
+                        <a href="">基金财务数据</a>
+                        <a href="">重仓股基金</a>
+                        <a href="">暂停基金</a>
+                      </dd>
+                    </dl>
+                  </div>              
+                </li>
+                <li>
+                  <div class="menu">
+                    <i id="circle"></i>
+                    <h4>通讯/位置</h4>
+                    <p>通讯API服务 移动联通基站 语音验证码</p>
+                  </div>
+                  <div class="hiddenmenu">
+                    <dl>
+                      <dt><a href="" class="hiddenmu">即时通讯</a></dt>
+                      <dd>
+                        <a href="">短信API服务</a>
+                        <a href="">语音验证码</a>
+                        <a href="">双向回呼</a>
+                        <a href="">手机固话来电显示</a>
+                      </dd>
+                    </dl>                  
+                    <dl>
+                      <dt><a href="" class="hiddenmu">位置信息</a></dt>
+                      <dd>
+                        <a href="">移动联通基站</a>
+                        <a href="">电信基站</a>
+                        <a href="">经纬度地址解析</a>
+                        <a href="">地图坐标服务</a>                   
+                      </dd>
+                    </dl>
+                  </div>
+                </li>
+                <li>
+                  <div class="menu">
+                    <i id="circle"></i>
+                    <h4>充值/礼品卡</h4>
+                    <p>话费充值 腾讯Q币 爱奇艺会员卡</p>
+                  </div>
+                  <div class="hiddenmenu">
+                    <dl>
+                      <dt><a href="" class="hiddenmu">充值缴费</a></dt>
+                      <dd>
+                        <a href="">腾讯Q币会员充值</a>
+                        <a href="">流量接口</a>
+                        <a href="">话费接口</a>
+                        <a href="">通用礼品卡接口文档</a>
+                        <a href="">加油卡接口</a>
+                        <a href="">游戏充值</a>
+                        <a href="">固话宽带直充</a>
+                        <a href="">中石化加油卡代充值</a>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt><a href="" class="hiddenmu">礼品卡</a></dt>
+                      <dd>
+                        <a href="">优酷土豆会员月卡</a>
+                        <a href="">礼品卡</a>
+                        <a href="">携带礼品卡（任我游）</a>
+                        <a href="">携带礼品卡（任我行）</a>
+                        <a href="">唯品会礼品卡</a>
+                        <a href="">当当礼品卡</a>
+                        <a href="">国美红券</a>
+                        <a href="">苏宁卡</a>
+                        <a href="">百胜心意卡</a>
+                        <a href="">爱奇艺会员卡</a>
+                      </dd>
+                    </dl>
+                  </div>
+                </li>
+                <li>
+                  <div class="menu">
+                    <i id="circle"></i>
+                    <h4>娱乐/体育/问答</h4>
+                    <p>星座运势 NBA</p>
+                  </div>
+                  <div class="hiddenmenu">
+                    <dl>
+                      <dt><a href="" class="hiddenmu">影视娱乐</a></dt>
+                      <dd>
+                        <a href="">影视API合集</a>
+                        <a href="">星座运势</a>
+                        <a href="">漫画书</a>
+                        <a href="">周公解梦</a>
+                        <a href="">影视影讯检索</a>
+                        <a href="">电视节目时间表</a>
+                        <a href="">QQ号码测吉凶</a>
+                        <a href="">老黄历</a>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt><a href="" class="hiddenmu">体育赛事</a></dt>
+                      <dd>
+                        <a href="">NBA赛事球员信息大全</a>
+                        <a href="">足球赛事球员信息大全</a>
+                        <a href="">CBA球队赛事信息</a>
+                        <a href="">周边体育馆查询</a>
+                        <a href="">NBA赛事</a>
+                        <a href="">足球联赛</a>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt><a href="" class="hiddenmu">问答知识</a></dt>
+                      <dd>
+                        <a href="">作文大全</a>
+                        <a href="">问答机器人</a>
+                        <a href="">数字阅读信息</a>
+                        <a href="">新华字典</a>
+                        <a href="">成语词典</a>
+                      </dd>
+                    </dl>
+                  </div>
+                </li>
+                <li>
+                  <div class="menu">
+                    <i id="circle"></i>
+                    <h4>开发工具</h4>
+                    <p>文档转换 证件识别 标准电码</p>
+                  </div>
+                  <div class="hiddenmenu">
+                    <dl>
+                      <dt><a href="" class="hiddenmu">站长工具</a></dt>
+                      <dd>
+                        <a href="">域名备案查询</a>
+                        <a href="">百度权重</a>
+                        <a href="">网站安全检测</a>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt><a href="" class="hiddenmu">应用开发</a></dt>
+                      <dd>
+                        <a href="">在线文档转换</a>
+                        <a href="">证件识别</a>
+                        <a href="">商标信息查询</a>
+                        <a href="">标准电码查询</a>
+                      </dd>
+                    </dl>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              </ol>
+            
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="img/001.png" alt="...">
+                  <div class="carousel-caption">
+                    ...
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/002.png" alt="...">
+                  <div class="carousel-caption">
+                    ...
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/003.png" alt="...">
+                  <div class="carousel-caption">
+                    ...
+                  </div>
+                </div>
+                
+              </div>
+            
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-example-generic" role="            button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></            span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="           button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></           span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <div id="float-img" class="conatiner">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="./img/01.png" alt="">
+                </div>
+                <div class="col-md-4">
+                  <img src="./img/02.png" alt="">
+                </div>
+                <div class="col-md-4">
+                  <img src="./img/02.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 第二大模块 有关会员的活动-->
+    <div class="vip">
+      <div class="myvip"></div>
+      <div class="container">
+        <div class="row">
+          <div id="goldvip" class="col-md-3">
+            <img src="./img/1.png" alt="">
+          </div>
+          <div id="ports" class="col-md-9">
+            <div class="port">
+              <i></i>
+              <img src="./img/0001.png" alt="">
+              <h3>车辆信息校验</h3>
+              <p style="color: #BBC1D2;font-size: 12px;">根据车牌号和发动机号校验车辆信息</p>
+              <p style="color:red;">按需资费</p>
+            </div>
+            <div class="port">
+              <i></i>
+              <img src="./img/0002.png" alt="">
+              <h3>身份证实名认证</h3>
+              <p style="color: #BBC1D2;font-size: 12px;">检测姓名和身份证号是否一致，身份证验...</p>
+              <p style="color:red;">￥300000/1000000次</p>
+            </div>  
+            <div class="port">
+              <span></span>              
+              <img src="./img/0003.png" alt="">
+              <h3>历史天气</h3>
+              <p style="color: #BBC1D2;font-size: 12px;">
+                查询历史天气，目前支持2000+城市、县...
+              </p>
+              <p style="color:red;">￥299/100000次</p>
+            </div>   
+            <div class="port" style="margin-top:15px;">
+              <i></i>
+              <img src="./img/0004.png" alt="">
+              <h3>全国车辆违章</h3>
+              <p style="color: #BBC1D2;font-size: 12px;">
+                目前已经支持300个左右的城市违章查询
+              </p>
+              <p style="color:red;">￥999/22000次</p>
+            </div>  
+            <div class="port" style="margin-top:15px;">
+              <i></i>
+              <img src="./img/0005.png" alt="">
+              <h3>VIN车架号查询详细版</h3>
+              <p style="color: #BBC1D2;font-size: 12px;">
+                根据传递17位的车架号进行详细信息查询
+              </p>
+              <p style="color:red;">￥1400/10000次</p>
+            </div>
+            <div class="port" style="margin-top:15px;">
+              <img src="./img/0006.png" alt="">
+              <h3>短信API服务</h3>
+              <p style="color: #BBC1D2;font-size: 12px;">
+                稳定的短信发送API，低至3.7分/条:[...
+              </p>
+              <p style="color:red;">￥450/10000次</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 第三大模块 开发者服务-->
+    <div class="serve">
+      <div class="serves"></div>
+      <div class="container">
+        <div class="row">
+          <div class="serve-body">
+            <div class="col-md-4">
+              <div class="wechat-body">
+                <div class="wechat">
+                  <span>微信解决方案</span>
+                  <p>查看详情</p>
+                </div>
+                <div class="wechat-back">
+                  <p>致力于多样化的微信营销手段，为微信企业客户提供一站式的营销解决方案，自  动发送短信；多种激励方式，免采购；无缝对接微信平台，免技术开发成本，帮助  微信客户提高日常运营效率，实现公众号粉丝的快速增长。
+                  </p>
+                  <span>查看详情</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="api-body">
+                <div class="api">
+                  <p>API接口测试</p>
+                  <span>登陆免费试用</span>
+                </div>
+                <div class="api-back">
+                  <p>在线API测试工具，在您申请聚合提供的API后，即可免费使用该工具。通过在线 填写各个请求参数的值，测试系统就实时返回参数结果，开发者可以快速验证接口的准确性，有效提升了测试效率，是对于开发者来说一个很友好的工具。
+                  </p>
+                  <span>登陆免费试用</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="data-body">
+                <div class="data">
+                 <span>数据分析服务</span>
+                 <p>查看详情</p>
+                </div> 
+                <div class="data-back">
+                  <p>致力于为用户建立从数据使用到数据分析的一个完整的开发服务生态。依托于大数 据的背景，帮助企业用户从非结构化数据中挖掘出用户基础信息数据，用户评价等一 系列有价值的数据，并最终通过数据可视化的方式，让企业客户可以直观的观察和分 析,解读出有意义的用户商业行为。
+                  </p>
+                  <span>查看详情</span>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 第四大模块  行业动态 -->
+    <div class="trends">
+      <div class="industry"></div>
+      <div class="container">
+        <div class="row">
+          <!-- 左半部分 -->
+          <div class="col-md-9">
+            <div class="trends-left">
+              <h4>最新资讯
+                <span>/Latest News</span>
+                <span class="check">查看更多>></span>
+              </h4>
+              <ul>
+                <li>
+                  <div class="new">                    
+                    <img src="./img/2.0.jpg" alt="">
+                  </div>
+                  <div class="news">
+                    <h3><a href="">聊聊短信接口攻击的防范方案</a></h3>
+                    <p>来源：<span>SDK.cn</span> 类型：<span>技术文章</span> 发布：<span>2017-08-17</span></p>
+                    <p>从Web2.0到移动互联网时代后，越来越多的产品功能开始使用短信验证功能，注册/登录/密码找回/支付.. ，可以说短信服务（接口）已经成为最重要的技术基础设施之一。也正是因为重要，越来越多的恶意攻击...</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="new">                    
+                    <img src="./img/1.0.jpg" alt="">
+                  </div>
+                  <div class="news">
+                    <h3><a href="#">从GPU、TPU到FPGA及其它：一文读懂神经网络硬件平台战局</a></h3>
+                    <p>来源：<span>SDK.cn</span> 类型：<span>技术文章</span> 发布：<span>2017-08-17</span></p>
+                    <p>在如今深度学习大爆发的时代，相关的硬件平台也在百花齐放，既有英伟达和谷歌这样的科技巨头，也有地平线机器人和 Graphcore 等创业公司——它们都各自提出了自己的解决方案。近日，多家公司的技术顾...</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="new">                    
+                    <img style="width:180px;height:108px;" src="./img/3.0.jpeg" alt="">
+                  </div>
+                  <div class="news">
+                    <h3><a href="#">我们是如何将 Cordova 应用嵌入到 React Native 中</a></h3>
+                    <p>来源：<span>SDK.cn</span> 类型：<span>技术文章</span> 发布：<span>2017-08-17</span></p>
+                    <p>重写一个应用是一件简单的事，可是演进一个应用则是一件复杂的工作。过去的一年多里，我在工作上的主要职责是：手机 APP 开发。日常主要是编写基于 Ionic 和 Angular 的混合应用，并想方设法地帮助客户...</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 右半部分 -->
+          <div class="col-md-3">
+            <div class="trends-right">
+              <h4>热门资讯<span>/Hot News</span></h4>
+              <ul>
+                <li>聊聊短信接口攻击的防范方案</li>
+                <li>从GPU、TPU到FPGA及其它：一文读懂神经网络硬件平台战局</li>
+                <li>我们是如何将 Cordova 应用嵌入到 React Native 中</li>
+                <li>教你如何使用分组密码对shellcode中的windows api字符串进行加密</li>
+                <li>APMCon 2017 | 听云研发副总裁廖雄杰：微服务架构的应用性能监控</li>
+                <li>腾讯祭出大招VasSonic，让你的H5页面首屏秒开！</li>
+              </ul>
+              <div class="article">
+                <span>标签</span>
+                <a href="#">技术文章</a>
+                <a href="#">业界新闻</a>
+                <a href="#">聚合公告</a>
+              </div>
+              <img src="./img/6.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 第五大模块 -->
+    <div class="number">
+      <div class="use"></div>
+      <!-- 滚动窗口 -->
+      <div class="carousel1">
+        <div id="jd-left">
+        </div>
+        <div class="carousel2">
+          <ul id="ulu">
+            <li class="li1"></li>
+            <li class="li2"></li>
+            <li class="li3"></li>
+            <li class="li4"></li>
+            <li class="li5"></li>
+            <li class="li6"></li>
+            <li class="li7"></li>
+            <li class="li8"></li>
+            <li class="li9"></li>
+            <li class="li10"></li>
+          </ul>
+        </div>
+        <div id="jd-right">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 底部 -->
+  <div class="footer">
+    <!-- 下面做出来底部上面的那条线 -->
+    <div class="slidn">
+      <div class="footer-left"></div>
+      <div class="footer-center">END</div>
+      <div class="footer-right"></div>
+    </div>
+
+    <ul id="base1">
+      <li id="base2">
+        <p>关于聚合</p>
+        <ul id="base3">
+          <li>API</li>
+          <li>新闻动态</li>
+          <li>合作伙伴</li>
+        </ul>
+      </li>
+      <li id="base2">
+        <p>聚合工具</p>
+        <ul id="base3">
+          <li>聚盒子</li>
+          <li>基站定位</li>
+        </ul>
+      </li>
+      <li id="base2">
+        <p>关注我们</p>
+        <i></i>
+      </li>
+      <li id="base2">
+        <p>服务&支持</p>
+        <ul id="base3">
+          <li>常见问题</li>
+          <li>服务条款</li>
+          <li>隐私政策</li>
+        </ul>
+      </li>
+      <li id="base2">
+        <p>联系我们</p>
+        <ul id="base3">
+          <li>400-882-7715</li>
+          <li>Link@juhe.cn</li>
+          <li>投诉与建议</li>
+        </ul>
+      </li>
+    </ul>
+    <div class="footer-bottom">
+      苏州新科兰德科技有限公司©版权所有    苏ICP备14006450号-3    增值电信业务经营许可证：苏B2-20140496
+    </div>
+  </div>
+  <div class="fix">
+    <ul>
+      <li><a class="li01"></a><span>QQ客服</span></li>
+      <li><a class="li02"></a><span>联系我们</span></li>
+      <li><a class="li03"></a><span>问题反馈</span></li>
+      <li><a class="li04" id="li04" href="#"></a><span>返回顶部</span></li>
+    </ul>
+  </div>
+  <script src="./script.js"></script>
+  <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+</body>
+</html>
